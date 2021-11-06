@@ -1,0 +1,52 @@
+doctype html
+head 
+    style.
+        input{
+        border: none;
+        padding: 10px;
+        margin: 0px;
+        height: 20px;
+        width: 100%;
+        border:2px solid #add8e6;
+        outline:none;
+        
+        }
+        input:hover{
+            border-color: #add8e6 #add8e6 #add8e6 #add8e6;
+        }
+        input:focus{
+            border-color: #add8e6;
+        }
+
+        input[type="submit"] {
+            border-radius: 2px;
+            background: #f2f2f2;
+            border: 2px solid #f2f2f2;
+            color: #757575;
+            cursor: default;
+            font-size: 14px;
+            font-weight: bold;
+            width: 100px;
+            padding: 0 16px;
+            height:36px;
+        }
+        input[type="submit"]:hover {
+            box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+            background: #f8f8f8;
+            border: 1px solid #c6c6c6;
+            box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+            color: #222;
+        }
+        h2 { font-family: "Lucida Console", monospace; }
+        p { font-family: "Lucida Console", monospace; }
+
+body
+    #main(style="margin: auto; width: 50%;")
+        h2 Direct Search
+        p Instant redirect to google result
+        form(action='/search' method="post")
+            input#fname(type='text' name='query' placeholder='Search')
+            br
+            br
+            input(type='submit' value="Go First")
+            input(type="submit" value="Go Second" formaction="/searchsecond")
