@@ -1,10 +1,9 @@
 # direct-google-redirect
 Be redirected to first (or second) google search result directly
 
-Build with https://www.npmjs.com/package/google-it
+Demo: https://directredirect-search.herokuapp.com/
 
-Demo:
-https://directredirect-search.herokuapp.com/
+Build with https://www.npmjs.com/package/google-it
 
 # Install
 1. npm i 
